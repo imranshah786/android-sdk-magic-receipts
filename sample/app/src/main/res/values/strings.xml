@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Magic Receipts</string>
+    <string name="initialize_sdk_button_text">Initialize</string>
+    <string name="show_button_text">Show</string>
+    <string name="hide_button_text">Hide</string>
+    <string name="check_readiness_button_text">Ready?</string>
+    <string name="check_readiness_toast_text">Is SDK ready: %1$b</string>
+    <string name="incentive_mode_switch_text">Incentive Mode</string>
+</resources>
