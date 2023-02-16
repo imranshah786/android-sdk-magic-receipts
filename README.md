@@ -68,7 +68,7 @@ dependencies {
 
 ### **Manual integration**
 
-Download Magic Receipts Android SDK from the repository and import the `.aar` file into your project libraries. 
+Clone the Magic Receipts Android SDK repository and import the `magic-receipts-1.0.0.aar` file into your project libraries. 
 
 If you are using Android Studio, right click on your project and select New Module. Then select Import .JAR or .AAR Package option and from the file browser locate `magic-receipts.aar` file. Right click again on your project and in the Module Dependencies tab choose to add Magic Receipts module that you recently added, as a dependency.
 
