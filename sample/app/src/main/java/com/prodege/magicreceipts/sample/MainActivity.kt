@@ -30,15 +30,14 @@ class MainActivity : AppCompatActivity(), MagicReceiptsWallShowedListener,
     private fun initSdk() {
         MagicReceipts.initialize(
             this,
-            Params.Builder("10")
-                .clickId("ac39a1a6-8b10-4086-8e7d-1512a35e5826")
+            Params.Builder("API_KEY")
                 .wallShowedListener(this)
                 .wallLoadedListener(this)
                 .wallHiddenListener(this)
                 .wallLoadFailedListener(this)
                 .wallShowFailedListener(this)
                 .incentiveMode(binding.incentiveModeSwitch.isChecked)
-                .userId("pollfish-fotis")
+                .userId("YOUR_USER_ID")
                 .build()
         )
     }

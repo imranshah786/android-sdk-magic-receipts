@@ -4,18 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="32dp">
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/header_layout"
+        android:background="@drawable/gradient_background">
+
+        <View
+            android:layout_marginTop="16dp"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circular_gradient_background" />
+
+        <ImageView
+            android:layout_width="179dp"
+            android:layout_height="260dp"
+            android:contentDescription="@string/header_content_descriptor"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/header"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
 
     <Button
         android:id="@+id/init_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/initialize_sdk_button_text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_layout"
+        android:layout_marginHorizontal="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
         android:id="@+id/show_button"
@@ -55,6 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
         android:id="@+id/incentive_mode_switch"
         app:layout_constraintTop_toBottomOf="@id/check_readiness_button"
         app:layout_constraintStart_toStartOf="parent"

@@ -6,4 +6,5 @@
     <string name="check_readiness_button_text">Ready?</string>
     <string name="check_readiness_toast_text">Is SDK ready: %1$b</string>
     <string name="incentive_mode_switch_text">Incentive Mode</string>
+    <string name="header_content_descriptor">Header Image</string>
 </resources>
