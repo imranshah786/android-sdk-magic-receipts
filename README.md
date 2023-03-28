@@ -53,14 +53,14 @@ You can use one the following methods do download and integrate the Magic Receip
 
 <br/>
 
-### **Maven** (Coming soon)
+### **Maven**
 
 Retrieve Magic Receipts through **mavenCentral()** with gradle by adding the following line in your app level **build.gradle** in the dependencies section.
 
 ```groovy
 dependencies {
     ...
-    implementation 'com.prodege:magic-receipts:1.0.0'
+    implementation 'com.prodege:magic-receipts:1.0.1'
 }
 ```
 
@@ -68,7 +68,7 @@ dependencies {
 
 ### **Manual integration**
 
-Clone the Magic Receipts Android SDK repository and import the `magic-receipts-1.0.0.aar` file into your project libraries. 
+Clone the Magic Receipts Android SDK repository and import the `magic-receipts-1.0.1.aar` file into your project libraries. 
 
 If you are using Android Studio, right click on your project and select New Module. Then select Import .JAR or .AAR Package option and from the file browser locate `magic-receipts.aar` file. Right click again on your project and in the Module Dependencies tab choose to add Magic Receipts module that you recently added, as a dependency.
 
@@ -205,7 +205,7 @@ If you are using gradle you can easily add in your dependencies:
 ```groovy
 dependencies {
     ...
-    implementation 'com.google.android.gms:play-services-ads-identifier:20.6.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
 }
 ```
 

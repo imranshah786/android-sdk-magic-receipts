@@ -1,12 +1,12 @@
-package com.prodege.magicreceipts.sample
+package com.pollfish.magicreceipts.sample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.prodege.magicreceipts.MagicReceipts
-import com.prodege.magicreceipts.builder.Params
-import com.prodege.magicreceipts.listener.*
-import com.prodege.magicreceipts.sample.databinding.ActivityMainBinding
+import com.pollfish.magicreceipts.MagicReceipts
+import com.pollfish.magicreceipts.builder.Params
+import com.pollfish.magicreceipts.listener.*
+import com.pollfish.magicreceipts.sample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), MagicReceiptsWallShowedListener,
     MagicReceiptsWallLoadedListener, MagicReceiptsWallHiddenListener,
