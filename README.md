@@ -60,7 +60,7 @@ Retrieve Magic Receipts through **mavenCentral()** with gradle by adding the fol
 ```groovy
 dependencies {
     ...
-    implementation 'com.prodege:magic-receipts:1.0.1'
+    implementation 'com.prodege:magic-receipts:1.0.2'
 }
 ```
 
@@ -68,7 +68,7 @@ dependencies {
 
 ### **Manual integration**
 
-Clone the Magic Receipts Android SDK repository and import the `magic-receipts-1.0.1.aar` file into your project libraries. 
+Clone the Magic Receipts Android SDK repository and import the `magic-receipts-1.0.2.aar` file into your project libraries. 
 
 If you are using Android Studio, right click on your project and select New Module. Then select Import .JAR or .AAR Package option and from the file browser locate `magic-receipts.aar` file. Right click again on your project and in the Module Dependencies tab choose to add Magic Receipts module that you recently added, as a dependency.
 
@@ -167,6 +167,7 @@ No | Description
 6.1 | **`.userId(String)`** <br/> A unique id to identify the user.
 6.2 | **`.incentiveMode(Boolean)`** <br/> Control the visibility of the Magic Receipts indicator.
 6.3 | **`.clickId(String)`** <br/> A pass throught parameter that will be passed back through server-to-server [postback](#postbacks) to identify the click.
+6.4 | **`.testMode(Boolean)`** <br/> Set the SDK to testMode
 
 <br/>
 
@@ -266,6 +267,30 @@ val params = Params.Builder("API_KEY")
 ```java
 Params params = new Params.Builder("API_KEY")
     .clickId("CLICK_ID")
+    .build();
+```
+
+<br/>
+
+### **6.4. `.testMode(Boolean)`**
+
+Sets the SDK to test mode. For testing purposes please contact your account manager to provide further instructions.
+
+<br/>
+
+span style="text-decoration: underline">Kotlin:</span>
+
+```kotlin
+val params = Params.Builder("API_KEY")
+    .testMode(true)
+    .build()
+```
+
+<span style="text-decoration: underline">Java:</span>
+
+```java
+Params params = new Params.Builder("API_KEY")
+    .testMode(true)
     .build();
 ```
 

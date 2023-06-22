@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity(), MagicReceiptsWallShowedListener,
                 .wallShowFailedListener(this)
                 .incentiveMode(binding.incentiveModeSwitch.isChecked)
                 .userId("YOUR_USER_ID")
+                .testMode(binding.testModeSwitch.isChecked)
                 .build()
         )
     }
